@@ -3,7 +3,7 @@
 游戏始终把自身视为有界窗口。推荐对应站点 **2048online.top**，保留主站工具栏，用 iframe 的实际 viewport 计算棋盘尺寸。
 
 ```html
-<iframe src="/games/halloween-pumpkin-shift/" title="Pumpkin Shift" width="100%" height="654" allow="fullscreen" scrolling="no" style="display:block;border:0"></iframe>
+<iframe src="https://halloween-pumpkin-shift.crazy3d.org/" title="Pumpkin Shift" width="100%" height="654" allow="fullscreen" scrolling="no" style="display:block;border:0"></iframe>
 ```
 
 主站已知桌面游戏区为 **1160×654 CSS px**，手机可能使用 `100dvh`；应扣除主站外部工具栏。不要给此游戏套额外强制竖屏比例。

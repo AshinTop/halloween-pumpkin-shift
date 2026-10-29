@@ -2,11 +2,11 @@
 
 **Twelve rooms. One empty space. A way home before dawn.** Pumpkin Shift is a Halloween number-sliding game that begins with approachable 3×3 puzzles and opens into a 4×4 manor. Two limited Moon Glides let you move a whole line in one turn while preserving the logic of the classic 8-puzzle and 15-puzzle.
 
-[**GitHub Pages deployment target**](https://ashintop.github.io/halloween-pumpkin-shift/) · [Watch the visual introduction](docs/media/intro.mp4) · [Rules](#how-to-play) · [Embedding](#embed-pumpkin-shift)
+[**Play online**](https://halloween-pumpkin-shift.crazy3d.org/) · [Watch the visual introduction](docs/media/intro.mp4) · [Rules](#how-to-play) · [Embedding](#embed-pumpkin-shift)
 
-**Deployment status:** GitHub Pages is not live yet. The `ashintop.github.io` links in this document are intended deployment addresses. Use the local-run instructions until the hosted game has been published and verified.
+**Live deployment:** Play on Cloudflare using the link above. The site is deployed from this GitHub repository. Hosting scripts and request logging may be added by Cloudflare independently of the game code.
 
-[Video player and transcript (deployment target)](https://ashintop.github.io/halloween-pumpkin-shift/intro.html) · [Captioned MP4 file](docs/media/intro.mp4). The 24-second silent introduction uses actual game screenshots; it is not a live gameplay recording.
+[Video player and transcript](https://halloween-pumpkin-shift.crazy3d.org/intro.html) · [Captioned MP4 file](docs/media/intro.mp4). The 24-second silent introduction uses actual game screenshots; it is not a live gameplay recording.
 
 [![Pumpkin Shift gameplay showing numbered pumpkin tiles, a moon-shaped empty square, move targets, and remaining Moon Glides](docs/images/gameplay.jpg)](docs/media/intro.mp4)
 
@@ -64,10 +64,10 @@ The direction buttons are visible on touch devices. In narrow portrait layouts t
 
 All campaign rooms are available from the selector:
 
-- [Start with room 1](https://ashintop.github.io/halloween-pumpkin-shift/?level=1)
-- [Try the first 4×4 room](https://ashintop.github.io/halloween-pumpkin-shift/?level=9)
-- [Play today's room](https://ashintop.github.io/halloween-pumpkin-shift/?mode=daily)
-- [Revisit the October 31, 2026 daily room](https://ashintop.github.io/halloween-pumpkin-shift/?mode=daily&date=2026-10-31)
+- [Start with room 1](https://halloween-pumpkin-shift.crazy3d.org/?level=1)
+- [Try the first 4×4 room](https://halloween-pumpkin-shift.crazy3d.org/?level=9)
+- [Play today's room](https://halloween-pumpkin-shift.crazy3d.org/?mode=daily)
+- [Revisit the October 31, 2026 daily room](https://halloween-pumpkin-shift.crazy3d.org/?mode=daily&date=2026-10-31)
 
 The Share button includes the selected daily date, so the recipient gets the same puzzle even on a later day. Invalid room numbers or calendar dates fall back safely. The daily room uses UTC midnight; a player's local calendar date can differ.
 
@@ -129,7 +129,7 @@ Use a direction button for a single adjacent slide, or tap a numbered tile. A fa
 
 ```html
 <iframe
-  src="https://ashintop.github.io/halloween-pumpkin-shift/"
+  src="https://halloween-pumpkin-shift.crazy3d.org/"
   title="Pumpkin Shift — Halloween sliding puzzle"
   width="100%"
   height="654"
@@ -153,11 +153,11 @@ The game always uses a bounded player layout and needs no special embed paramete
 
 ## More games for a moonlit break
 
-- **[Pumpkin 2048](https://github.com/AshinTop/halloween-2048)** — classic number merging and three positional Lantern Trials.
-- **[Ghost Lanterns 3D](https://github.com/AshinTop/halloween-3d)** — spatial Lights Out puzzles with linked pumpkin lamps.
-- **[Haunted Hearts](https://github.com/AshinTop/halloween-love-game)** — two friendly ghosts cooperate through eight puzzle rooms.
-- **[Trick-or-Treat TriPeaks](https://github.com/AshinTop/halloween-tripeaks)** — a 52-card Halloween game with eight verified rescue deals.
+- **[Pumpkin 2048](https://halloween-2048.crazy3d.org/)** · [Source](https://github.com/AshinTop/halloween-2048) — classic number merging and three positional Lantern Trials.
+- **[Ghost Lanterns 3D](https://halloween-3d.crazy3d.org/)** · [Source](https://github.com/AshinTop/halloween-3d) — spatial Lights Out puzzles with linked pumpkin lamps.
+- **[Haunted Hearts](https://halloween-love-game.crazy3d.org/)** · [Source](https://github.com/AshinTop/halloween-love-game) — two friendly ghosts cooperate through eight puzzle rooms.
+- **[Trick-or-Treat TriPeaks](https://halloween-tripeaks.crazy3d.org/)** · [Source](https://github.com/AshinTop/halloween-tripeaks) — a 52-card Halloween game with eight verified rescue deals.
 
 ## Credits
 
-Created for **AshinTop** and **Midnight Candy Club**, with AI-assisted design, implementation, and review. The manor, tile art, interface, and synthesized sounds were created for this project. The game is an independent treatment of traditional sliding-number puzzles. It includes no analytics, payments, advertisements, or remote account system.
+Created for **AshinTop** and **Midnight Candy Club**, with AI-assisted design, implementation, and review. The manor, tile art, interface, and synthesized sounds were created for this project. The game is an independent treatment of traditional sliding-number puzzles. The game source includes no analytics, payments, advertisements, or remote account system.
