@@ -1,163 +1,105 @@
-# Pumpkin Shift — Halloween Sliding Puzzle with Moon Glides
+[English](README.md) | [简体中文](README.zh-CN.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [日本語](README.ja.md)
 
-**Twelve rooms. One empty space. A way home before dawn.** Pumpkin Shift is a Halloween number-sliding game that begins with approachable 3×3 puzzles and opens into a 4×4 manor. Two limited Moon Glides let you move a whole line in one turn while preserving the logic of the classic 8-puzzle and 15-puzzle.
+# 🎃 Pumpkin Shift — Halloween Sliding Number Puzzle
 
-[**Play online**](https://halloween-pumpkin-shift.crazy3d.org/) · [Watch the visual introduction](docs/media/intro.mp4) · [Rules](#how-to-play) · [Embedding](#embed-pumpkin-shift)
+**The manor is quiet. Its numbered pumpkins have other plans.** Pumpkin Shift is a cozy Halloween sliding puzzle made for [2048 Online](https://2048online.top/). Put the numbers in order, save a little moonlight for a clever shortcut, and explore twelve rooms plus a daily puzzle. The familiar 8-puzzle and 15-puzzle gain a small, useful twist: Moon Glides.
 
-**Live deployment:** Play on Cloudflare using the link above. The site is deployed from this GitHub repository. Hosting scripts and request logging may be added by Cloudflare independently of the game code.
+**[Play online](https://halloween-pumpkin-shift.crazy3d.org/)** · [All Halloween games](https://github.com/AshinTop/halloween-games) · [Embedding guide](EMBEDDING.md) · [Design notes](DESIGN.md)
 
-[Video player and transcript](https://halloween-pumpkin-shift.crazy3d.org/intro.html) · [Captioned MP4 file](docs/media/intro.mp4). The 24-second silent introduction uses actual game screenshots; it is not a live gameplay recording.
+**Document languages:** English, 简体中文, Español, Português (Brasil), 日本語. **Game interface:** English and Simplified Chinese only; the other README languages do not add in-game translations.
 
-[![Pumpkin Shift gameplay showing numbered pumpkin tiles, a moon-shaped empty square, move targets, and remaining Moon Glides](docs/images/gameplay.jpg)](docs/media/intro.mp4)
+![Pumpkin Shift Halloween sliding puzzle with numbered tiles, an empty square and Moon Glide counters](docs/images/gameplay.jpg)
 
-If this little manor earns a place in your puzzle collection, **[star Pumpkin Shift on GitHub](https://github.com/AshinTop/halloween-pumpkin-shift)**. Issues with the room number and a reproducible move sequence help us improve it.
+## A manor full of small discoveries 👻
 
-## A familiar puzzle with a little moonlight
-
-- **12 fixed campaign rooms:** eight 3×3 puzzles, followed by four 4×4 puzzles.
-- **Two Moon Glides per room:** slide a continuous row or column toward the empty space in one turn.
-- **Verified solutions and fair targets:** every campaign room has a complete legal solution, and every three-star move target has an executable proof path.
-- **A daily 3×3 room:** a deterministic shuffle based on the UTC calendar date.
-- **Safe trail hints:** highlight a legal next tile along a route that can always return to the goal.
-- **Undo, restart, and local progress:** restore the previous board and resources; keep current play, best move counts, and stars in the same browser.
-- **Mouse, touch, and keyboard controls**, English and Simplified Chinese, reduced-motion support, and optional locally synthesized sound.
-- **Original vector art:** a slate-blue manor, brass-colored moonlight, pumpkin tiles, and sage-green numbers that have found their place.
-
-Pumpkin Shift was designed for [2048 Online](https://2048online.top) and the Midnight Candy Club collection. It is a standalone static game, not a 2048 merge variant: the numbers slide into order and do not combine.
+- **12 campaign rooms:** eight 3×3 boards, followed by four 4×4 boards.
+- Two Moon Glides per room, unlimited ordinary slides, and undo that restores spent magic.
+- A reproducible 3×3 daily puzzle based on the UTC date.
+- Correctly placed tiles glow green. Move targets, stars, optional sound, and original manor artwork give each room a gentle sense of progress.
+- A route hint, room selector, and local saves support short sessions without a countdown.
 
 ## How to play
 
-### Restore the room
+Slide the tiles into ascending order, reading left to right and top to bottom, with the empty square in the bottom-right corner. Numbers move into the gap; they do not merge.
 
-Arrange the numbers from left to right and top to bottom. Leave the empty moon square at the bottom-right corner. Tap a tile directly next to the empty space to slide it into that space.
+A tile directly beside the gap makes an ordinary slide. For a **Moon Glide**, tap a farther tile in the same row or column. The whole intervening line shifts toward the gap. This counts as one move and spends one of the room’s two glides. Diagonal moves are not allowed.
 
-There is no countdown or hard move limit. The three-star target rewards efficiency; taking more moves still lets you finish the room. Correctly placed numbers change to a calm green so the board's progress is easy to read.
+The arrow keys and on-screen direction pad move the **empty square**. This is useful to remember when a tile appears to travel in the opposite direction. Tap tiles when you want direct control over a particular slide or glide.
 
-### Spend a Moon Glide
-
-A tile farther away can move if it shares the empty space's row or column and you have a Moon Glide left. Select that tile to slide the entire intervening line toward the gap. The action counts as one move and consumes one of the room's two glides.
-
-Ordinary adjacent slides are unlimited and never consume moonlight. A glide is a compact sequence of legal traditional moves, so it does not create an otherwise unreachable board. Undo restores the glide when you undo that action.
-
-### Follow a trail when you get lost
-
-**Trail Hint** highlights one safe next tile. The game starts with a known route obtained by reversing its legal shuffle. If you take another path, the hint route can first retrace some of your moves and then reconnect to the original solution.
-
-This guarantees a route home but **does not claim to be the shortest solution**. Asking for a hint does not move a tile or consume a turn. Tap the highlighted tile when you are ready.
+There is no hard move limit and no timer. Stars reward efficient solutions, but you can finish after passing the target. The campaign targets have verified solution routes; the daily target can be reached along its reverse-shuffle route without magic.
 
 ## Controls
 
-| Action | Input |
-| --- | --- |
-| Slide a neighboring tile | Click or tap it |
-| Move the empty square | Arrow keys or visible direction buttons |
-| Moon Glide | Click a farther tile in the same row or column |
-| Undo | **Z** or Undo |
-| Highlight a safe next step | Trail Hint |
-| Restart the current room | Restart |
-| Choose another room | Room selector or previous/next buttons |
-| Help, sound, language | Header buttons |
+| Action | Mouse or touch | Keyboard |
+|---|---|---|
+| Slide a neighboring tile | Tap the tile | Arrow keys move the gap |
+| Use a Moon Glide | Tap a farther aligned tile | Use tile focus and activation |
+| Undo | Undo button | Z |
+| Ask for a route hint | Hint button | Tab to the button |
+| Restart or change rooms | Restart, selector, previous / next | Tab and Enter |
 
-The direction buttons are visible on touch devices. In narrow portrait layouts they are 38 px high. Keyboard commands are ignored while the help dialog or an input control needs them.
+**Trail Hint is a safe route helper, not a shortest-path solver.** Its route can undo your detours and then reverse the room’s original shuffle. Asking for a hint does not move a tile or spend a turn.
 
-## Campaign and daily links
+## Daily puzzles and saved progress
 
-All campaign rooms are available from the selector:
+Campaign and daily boards are built by legal moves from the solved board, so they are solvable. [Room 9](https://halloween-pumpkin-shift.crazy3d.org/?level=9) starts the 4×4 chapter. [Today’s puzzle](https://halloween-pumpkin-shift.crazy3d.org/?mode=daily) follows UTC; [a dated daily link](https://halloween-pumpkin-shift.crazy3d.org/?mode=daily&date=2026-10-31) keeps that exact day.
 
-- [Start with room 1](https://halloween-pumpkin-shift.crazy3d.org/?level=1)
-- [Try the first 4×4 room](https://halloween-pumpkin-shift.crazy3d.org/?level=9)
-- [Play today's room](https://halloween-pumpkin-shift.crazy3d.org/?mode=daily)
-- [Revisit the October 31, 2026 daily room](https://halloween-pumpkin-shift.crazy3d.org/?mode=daily&date=2026-10-31)
+The current board, best move counts, stars, and preferences are saved locally. Reloading can restore the current game when no link explicitly requests another board. Undo history lasts for the current session.
 
-The Share button includes the selected daily date, so the recipient gets the same puzzle even on a later day. Invalid room numbers or calendar dates fall back safely. The daily room uses UTC midnight; a player's local calendar date can differ.
+## FAQ
 
-## Frequently asked questions
+**Is this another 2048?** It shares a love of numbers, but uses sliding-puzzle rules. Equal numbers never combine.
 
-### Is every puzzle solvable?
+**Can I waste both glides and get stuck permanently?** Ordinary slides remain available, and undo restores spent glides. Restart brings back the original puzzle.
 
-Every campaign and daily board is created by making legal moves from the completed board. The campaign also has automated full-solution checks. All 12 campaign three-star targets have separately recorded legal paths, and the daily target can be reached by its ordinary reverse-shuffle route without magic.
+**Why does a hint suggest backtracking?** The helper follows a known safe route. It does not claim that its next move belongs to the shortest possible solution.
 
-### Are hints an optimal solver?
+## See the game
 
-No. They provide a safe route, possibly with backtracking. This avoids falsely presenting a long route as the mathematical minimum and keeps the implementation deterministic even for 4×4 positions.
+![Pumpkin Shift compact layout with numbered board, direction pad and undo controls](docs/images/mobile.jpg)
 
-### Can I run out of moves?
+Actual game interface in a compact browser iframe. This illustrates the layout; it is not a physical-phone performance test.
 
-No. A star target is an efficiency goal, not a failure timer. You can keep moving, use hints, undo, or restart.
+[Watch the 24-second introduction](https://halloween-pumpkin-shift.crazy3d.org/intro.html) · [Download the captioned MP4](docs/media/intro.mp4). This silent visual tour is assembled from actual game screenshots, not a continuous gameplay recording. The screenshots and video show captured interface states and may predate later visual refinements.
 
-### What is saved?
+## Embed it on your site
 
-Current play, best move counts, stars, language, and sound preference are stored locally when available. Reloading can restore the current board, but the Undo stack belongs to the current page session. There is no account, online leaderboard, or cross-device synchronization. If storage is unavailable, the game remains playable.
+```html
+<iframe src="https://halloween-pumpkin-shift.crazy3d.org/"
+  title="Pumpkin Shift"
+  style="display:block;width:100%;height:654px;border:0"
+  allow="fullscreen" allowfullscreen></iframe>
+```
 
-### Is it suitable for small game windows?
+The layout is designed around 1160×654 desktop, 390×650 portrait and 844×340 landscape iframe windows. No special embed parameter is required. Check the host’s available height, especially when its own toolbar is visible.
 
-The board uses the iframe's actual available area. Large windows can show the manor illustration; short landscape windows place tools beside the board. See [EMBEDDING.md](EMBEDDING.md) for browser viewport checks and integration guidance. Those checks do not imply testing every physical mobile device.
+The live site uses Cloudflare and is deployed from this GitHub repository. Give the iframe a real height and leave space for the host toolbar. Fullscreen may be provided by the host. See [EMBEDDING.md](EMBEDDING.md) for the integration contract.
 
-## Run locally
-
-Serve the repository root:
+## Run locally and check the rules
 
 ```sh
 python3 -m http.server 4173
 ```
 
-Open [http://localhost:4173](http://localhost:4173). The project is buildless and has no npm dependencies, API keys, runtime CDN, or external game player. HTTP or HTTPS is needed for reliable ES module loading; `file://` may be blocked by the browser.
-
-## Verify the game
+Serve the repository root, then open [http://localhost:4173/](http://localhost:4173/). The game is static: no build or dependency installation is needed. Use HTTP(S), because direct `file://` access can block ES modules. Node.js is required for the tests.
 
 ```sh
 npm test
 ```
 
-For detailed individual test output:
+The **11 tests** cover campaign solutions and targets, daily generation, glide costs and exhausted magic, hint routes after detours, board boundaries, dated links, and saved-state validation.
 
-```sh
-node tests/engine.test.js
-```
+The game source does not require an account, remote API, advertising SDK, or external asset CDN. Records stay in browser storage; there is no cloud sync. Cloudflare may add its own hosting scripts and request logs. Optional synthesized audio follows browser sound permissions.
 
-The **11 checks** cover all campaign solutions, every three-star target, deterministic daily rooms, full-line move costs, depleted magic, route recovery after arbitrary detours, row boundaries, strict URL/date parsing, and malformed stored data. Engine tests are complemented by separate browser layout and interaction review.
+## More moonlit adventures 🍬
 
-## Compact-player walkthrough
+- [Pumpkin 2048](https://halloween-2048.crazy3d.org/) · [Source](https://github.com/AshinTop/halloween-2048) — Classic merging and Lantern Trials.
+- [Ghost Lanterns 3D](https://halloween-3d.crazy3d.org/) · [Source](https://github.com/AshinTop/halloween-3d) — Spatial Lights Out with linked lanterns.
+- [Haunted Hearts](https://halloween-love-game.crazy3d.org/) · [Source](https://github.com/AshinTop/halloween-love-game) — Two ghosts, pressure gates, and a shared lantern.
+- [Trick-or-Treat TriPeaks](https://halloween-tripeaks.crazy3d.org/) · [Source](https://github.com/AshinTop/halloween-tripeaks) — Higher-or-lower solitaire and Moon Bridges.
 
-![Pumpkin Shift in a compact host iframe with numbered tiles, moonlight resources and directional controls](docs/images/mobile.jpg)
+## Credits and a little support
 
-Use a direction button for a single adjacent slide, or tap a numbered tile. A farther tile in the empty square’s row or column spends one Moon Glide. Watch the move count and moonlight together when planning a shorter route.
+Created for **AshinTop’s Midnight Candy Club** through human-directed AI collaboration in design, programming, writing, testing, and review. The original artwork and synthesized sounds were made for this project. [Design notes](DESIGN.md) explain its intent.
 
-*Actual interface captured in a browser iframe sized for the host player. This is a compact-window illustration, not a physical-phone test.*
-
-## Embed Pumpkin Shift
-
-```html
-<iframe
-  src="https://halloween-pumpkin-shift.crazy3d.org/"
-  title="Pumpkin Shift — Halloween sliding puzzle"
-  width="100%"
-  height="654"
-  scrolling="no"
-  allow="fullscreen"
-  style="display:block;border:0"
-></iframe>
-```
-
-The game always uses a bounded player layout and needs no special embed parameter. Leave room for the host's own toolbar instead of placing it over the game. No parent-document access, camera, microphone, or pointer lock is used. Storage restrictions only affect persistence. [EMBEDDING.md](EMBEDDING.md) provides the complete host-window notes.
-
-## Source and design
-
-| File | Responsibility |
-| --- | --- |
-| `engine.js` | Board rules, deterministic rooms, safe routes, validation |
-| `app.js` | Interaction, rendering, translations, saves, sound, sharing |
-| `index.html`, `style.css`, `icon.svg` | Original manor artwork and responsive interface |
-| `tests/engine.test.js` | Rule checks and complete solution proofs |
-| [DESIGN.md](DESIGN.md) | Game-design intent, fairness, and visual direction |
-
-## More games for a moonlit break
-
-- **[Pumpkin 2048](https://halloween-2048.crazy3d.org/)** · [Source](https://github.com/AshinTop/halloween-2048) — classic number merging and three positional Lantern Trials.
-- **[Ghost Lanterns 3D](https://halloween-3d.crazy3d.org/)** · [Source](https://github.com/AshinTop/halloween-3d) — spatial Lights Out puzzles with linked pumpkin lamps.
-- **[Haunted Hearts](https://halloween-love-game.crazy3d.org/)** · [Source](https://github.com/AshinTop/halloween-love-game) — two friendly ghosts cooperate through eight puzzle rooms.
-- **[Trick-or-Treat TriPeaks](https://halloween-tripeaks.crazy3d.org/)** · [Source](https://github.com/AshinTop/halloween-tripeaks) — a 52-card Halloween game with eight verified rescue deals.
-
-## Credits
-
-Created for **AshinTop** and **Midnight Candy Club**, with AI-assisted design, implementation, and review. The manor, tile art, interface, and synthesized sounds were created for this project. The game is an independent treatment of traditional sliding-number puzzles. The game source includes no analytics, payments, advertisements, or remote account system.
+Enjoyed this little adventure? **[Star Pumpkin Shift on GitHub](https://github.com/AshinTop/halloween-pumpkin-shift)** to save it for later and follow updates. Useful issue reports include the game mode or level, browser, window size, and steps that reproduce the problem. Explore the [complete Halloween collection](https://github.com/AshinTop/halloween-games).
