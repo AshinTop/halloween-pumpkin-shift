@@ -4,7 +4,7 @@
 
 **The manor is quiet. Its numbered pumpkins have other plans.** Pumpkin Shift is a cozy Halloween sliding puzzle made for [2048 Online](https://2048online.top/). Put the numbers in order, save a little moonlight for a clever shortcut, and explore twelve rooms plus a daily puzzle. The familiar 8-puzzle and 15-puzzle gain a small, useful twist: Moon Glides.
 
-**[Play online](https://halloween-pumpkin-shift.crazy3d.org/)** · [All Halloween games](https://github.com/AshinTop/halloween-games) · [Embedding guide](EMBEDDING.md) · [Design notes](DESIGN.md)
+**[Play online](https://crazy3d.org/halloween-pumpkin-shift)** · [All Halloween games](https://github.com/AshinTop/halloween-games) · [Embedding guide](EMBEDDING.md) · [Design notes](DESIGN.md)
 
 **Document languages:** English, 简体中文, Español, Português (Brasil), 日本語. **Game interface:** English and Simplified Chinese only; the other README languages do not add in-game translations.
 
@@ -64,6 +64,8 @@ Actual game interface in a compact browser iframe. This illustrates the layout; 
 
 ## Embed it on your site
 
+Player page: [Play on Crazy3D](https://crazy3d.org/halloween-pumpkin-shift). For embedding, use the direct game URL `https://halloween-pumpkin-shift.crazy3d.org/`, not the Crazy3D page. Keep the iframe example below on the game subdomain.
+
 ```html
 <iframe src="https://halloween-pumpkin-shift.crazy3d.org/"
   title="Pumpkin Shift"
@@ -93,10 +95,10 @@ The game source does not require an account, remote API, advertising SDK, or ext
 
 ## More moonlit adventures 🍬
 
-- [Pumpkin 2048](https://halloween-2048.crazy3d.org/) · [Source](https://github.com/AshinTop/halloween-2048) — Classic merging and Lantern Trials.
-- [Ghost Lanterns 3D](https://halloween-3d.crazy3d.org/) · [Source](https://github.com/AshinTop/halloween-3d) — Spatial Lights Out with linked lanterns.
-- [Haunted Hearts](https://halloween-love-game.crazy3d.org/) · [Source](https://github.com/AshinTop/halloween-love-game) — Two ghosts, pressure gates, and a shared lantern.
-- [Trick-or-Treat TriPeaks](https://halloween-tripeaks.crazy3d.org/) · [Source](https://github.com/AshinTop/halloween-tripeaks) — Higher-or-lower solitaire and Moon Bridges.
+- [Pumpkin 2048](https://crazy3d.org/midnight-pumpkin-2048) · [Source](https://github.com/AshinTop/halloween-2048) — Classic merging and Lantern Trials.
+- [Ghost Lanterns 3D](https://crazy3d.org/halloween-3d) · [Source](https://github.com/AshinTop/halloween-3d) — Spatial Lights Out with linked lanterns.
+- [Haunted Hearts](https://crazy3d.org/halloween-love-game) · [Source](https://github.com/AshinTop/halloween-love-game) — Two ghosts, pressure gates, and a shared lantern.
+- [Trick-or-Treat TriPeaks](https://crazy3d.org/halloween-tripeaks) · [Source](https://github.com/AshinTop/halloween-tripeaks) — Higher-or-lower solitaire and Moon Bridges.
 
 ## Credits and a little support
 

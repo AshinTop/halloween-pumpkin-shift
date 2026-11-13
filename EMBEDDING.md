@@ -1,5 +1,13 @@
 # 2048 主站嵌入
 
+## Player page and iframe source / 玩家页面与嵌入地址
+
+- Player page / 玩家页面: [Crazy3D](https://crazy3d.org/halloween-pumpkin-shift)
+- Iframe source / iframe 地址: `https://halloween-pumpkin-shift.crazy3d.org/`
+
+Use the game subdomain for iframe embedding, not the Crazy3D player page. 游戏嵌入请使用上面的独立子域名，不要嵌入 Crazy3D 游戏页面。
+
+
 游戏始终把自身视为有界窗口。推荐对应站点 **2048online.top**，保留主站工具栏，用 iframe 的实际 viewport 计算棋盘尺寸。
 
 ```html

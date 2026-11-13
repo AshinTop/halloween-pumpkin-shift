@@ -4,7 +4,7 @@
 
 **La mansión está tranquila. Sus calabazas numeradas tienen otros planes.** Pumpkin Shift es un puzle de Halloween creado para [2048 Online](https://2048online.top/). Ordena las piezas, reserva un poco de luz lunar para un atajo y descubre doce habitaciones y un reto diario. Los clásicos puzles de ocho y quince piezas incorporan dos deslizamientos lunares por habitación.
 
-**[Jugar ahora](https://halloween-pumpkin-shift.crazy3d.org/)** · [Colección de Halloween](https://github.com/AshinTop/halloween-games) · [Guía de integración](EMBEDDING.md) · [Notas de diseño](DESIGN.md)
+**[Jugar ahora](https://crazy3d.org/halloween-pumpkin-shift)** · [Colección de Halloween](https://github.com/AshinTop/halloween-games) · [Guía de integración](EMBEDDING.md) · [Notas de diseño](DESIGN.md)
 
 **Idiomas de la documentación:** English, 简体中文, Español, Português (Brasil), 日本語. **Interfaz del juego:** solo inglés y chino simplificado. Los otros idiomas del README no implican una traducción de los menús del juego.
 
@@ -64,6 +64,8 @@ Interfaz real capturada en un iframe compacto del navegador. Ilustra la distribu
 
 ## Añádelo a tu sitio
 
+Página para jugar: [Jugar en Crazy3D](https://crazy3d.org/halloween-pumpkin-shift). Para incrustar el juego, utiliza la URL directa `https://halloween-pumpkin-shift.crazy3d.org/`, no la página de Crazy3D. El ejemplo de iframe de abajo conserva el subdominio del juego.
+
 ```html
 <iframe src="https://halloween-pumpkin-shift.crazy3d.org/"
   title="Pumpkin Shift"
@@ -93,10 +95,10 @@ El código del juego no necesita cuentas, API remotas, SDK publicitarios ni una 
 
 ## Más aventuras a la luz de la luna 🍬
 
-- [Pumpkin 2048](https://halloween-2048.crazy3d.org/) · [Código](https://github.com/AshinTop/halloween-2048) — Fusiones clásicas y Lantern Trials.
-- [Ghost Lanterns 3D](https://halloween-3d.crazy3d.org/) · [Código](https://github.com/AshinTop/halloween-3d) — Lights Out espacial con faroles enlazados.
-- [Haunted Hearts](https://halloween-love-game.crazy3d.org/) · [Código](https://github.com/AshinTop/halloween-love-game) — Dos fantasmas, compuertas y una linterna compartida.
-- [Trick-or-Treat TriPeaks](https://halloween-tripeaks.crazy3d.org/) · [Código](https://github.com/AshinTop/halloween-tripeaks) — Solitario de rangos vecinos y Moon Bridges.
+- [Pumpkin 2048](https://crazy3d.org/midnight-pumpkin-2048) · [Código](https://github.com/AshinTop/halloween-2048) — Fusiones clásicas y Lantern Trials.
+- [Ghost Lanterns 3D](https://crazy3d.org/halloween-3d) · [Código](https://github.com/AshinTop/halloween-3d) — Lights Out espacial con faroles enlazados.
+- [Haunted Hearts](https://crazy3d.org/halloween-love-game) · [Código](https://github.com/AshinTop/halloween-love-game) — Dos fantasmas, compuertas y una linterna compartida.
+- [Trick-or-Treat TriPeaks](https://crazy3d.org/halloween-tripeaks) · [Código](https://github.com/AshinTop/halloween-tripeaks) — Solitario de rangos vecinos y Moon Bridges.
 
 ## Créditos y apoyo
 

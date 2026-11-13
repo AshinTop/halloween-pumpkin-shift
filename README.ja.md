@@ -4,7 +4,7 @@
 
 **静かな屋敷で、数字のかぼちゃたちが場所を入れ替えました。** Pumpkin Shift は [2048 Online](https://2048online.top/) のために作られた、ハロウィンのスライドパズルです。数字を並べ直し、月明かりの力で少しだけ近道をして、12 の部屋と毎日のお題を楽しめます。おなじみの 8 パズルと 15 パズルに、各部屋 2 回の「ムーングライド」を加えました。
 
-**[今すぐ遊ぶ](https://halloween-pumpkin-shift.crazy3d.org/)** · [ハロウィンゲーム集](https://github.com/AshinTop/halloween-games) · [埋め込みガイド](EMBEDDING.md) · [設計ノート](DESIGN.md)
+**[今すぐ遊ぶ](https://crazy3d.org/halloween-pumpkin-shift)** · [ハロウィンゲーム集](https://github.com/AshinTop/halloween-games) · [埋め込みガイド](EMBEDDING.md) · [設計ノート](DESIGN.md)
 
 **README の言語：** English、简体中文、Español、Português (Brasil)、日本語。**ゲーム内の表示は英語と簡体字中国語のみ**です。日本語などの README があっても、ゲームのメニューがその言語に対応しているわけではありません。
 
@@ -64,6 +64,8 @@
 
 ## 自分のサイトに埋め込む
 
+プレイヤー向けページ：[Crazy3D で遊ぶ](https://crazy3d.org/halloween-pumpkin-shift)。埋め込みには Crazy3D の紹介ページではなく、ゲームの直接 URL `https://halloween-pumpkin-shift.crazy3d.org/` を使用してください。下の iframe 例ではゲームのサブドメインを使用しています。
+
 ```html
 <iframe src="https://halloween-pumpkin-shift.crazy3d.org/"
   title="Pumpkin Shift"
@@ -93,10 +95,10 @@ npm test
 
 ## 月明かりの下でもうひと遊び 🍬
 
-- [Pumpkin 2048](https://halloween-2048.crazy3d.org/) · [ソース](https://github.com/AshinTop/halloween-2048) — 定番の数字合成と Lantern Trials.
-- [Ghost Lanterns 3D](https://halloween-3d.crazy3d.org/) · [ソース](https://github.com/AshinTop/halloween-3d) — 連動するランタンの立体 Lights Out.
-- [Haunted Hearts](https://halloween-love-game.crazy3d.org/) · [ソース](https://github.com/AshinTop/halloween-love-game) — 二人のおばけ、仕掛け扉、共有するランタン.
-- [Trick-or-Treat TriPeaks](https://halloween-tripeaks.crazy3d.org/) · [ソース](https://github.com/AshinTop/halloween-tripeaks) — 前後の数字をつなぐソリティアと Moon Bridge.
+- [Pumpkin 2048](https://crazy3d.org/midnight-pumpkin-2048) · [ソース](https://github.com/AshinTop/halloween-2048) — 定番の数字合成と Lantern Trials.
+- [Ghost Lanterns 3D](https://crazy3d.org/halloween-3d) · [ソース](https://github.com/AshinTop/halloween-3d) — 連動するランタンの立体 Lights Out.
+- [Haunted Hearts](https://crazy3d.org/halloween-love-game) · [ソース](https://github.com/AshinTop/halloween-love-game) — 二人のおばけ、仕掛け扉、共有するランタン.
+- [Trick-or-Treat TriPeaks](https://crazy3d.org/halloween-tripeaks) · [ソース](https://github.com/AshinTop/halloween-tripeaks) — 前後の数字をつなぐソリティアと Moon Bridge.
 
 ## 制作クレジットと応援
 

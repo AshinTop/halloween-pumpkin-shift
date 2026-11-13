@@ -4,7 +4,7 @@
 
 **庄园很安静，南瓜数字却悄悄换了位置。** Pumpkin Shift 是为 [2048 Online](https://2048online.top/) 创作的万圣节数字滑块小游戏。把数字排回顺序，留一点月光给巧妙的捷径，探索十二个房间和每日谜题。经典八数码、十五数码玩法中，加入了每关两次的「月光滑移」。
 
-**[在线试玩](https://halloween-pumpkin-shift.crazy3d.org/)** · [万圣节游戏总合集](https://github.com/AshinTop/halloween-games) · [嵌入说明](EMBEDDING.md) · [设计说明](DESIGN.md)
+**[在线试玩](https://crazy3d.org/halloween-pumpkin-shift)** · [万圣节游戏总合集](https://github.com/AshinTop/halloween-games) · [嵌入说明](EMBEDDING.md) · [设计说明](DESIGN.md)
 
 **文档语言：** English、简体中文、Español、Português (Brasil)、日本語。**游戏界面目前仅支持英语和简体中文**；西班牙语、葡萄牙语和日语版本为完整说明文档，并非已实现的界面翻译。
 
@@ -64,6 +64,8 @@
 
 ## 嵌入你的站点
 
+玩家页面：[在 Crazy3D 游玩](https://crazy3d.org/halloween-pumpkin-shift)。嵌入时使用游戏直连地址 `https://halloween-pumpkin-shift.crazy3d.org/`，不要把 Crazy3D 游戏介绍页用作 iframe；下方示例保留游戏子域名。
+
 ```html
 <iframe src="https://halloween-pumpkin-shift.crazy3d.org/"
   title="Pumpkin Shift"
@@ -93,10 +95,10 @@ npm test
 
 ## 下一段月光小冒险 🍬
 
-- [Pumpkin 2048](https://halloween-2048.crazy3d.org/) · [源码](https://github.com/AshinTop/halloween-2048) — 经典合并与灯笼试炼.
-- [Ghost Lanterns 3D](https://halloween-3d.crazy3d.org/) · [源码](https://github.com/AshinTop/halloween-3d) — 带灵魂联动的 3D 熄灯谜题.
-- [Haunted Hearts](https://halloween-love-game.crazy3d.org/) · [源码](https://github.com/AshinTop/halloween-love-game) — 双幽灵、压力门与共享灯笼.
-- [Trick-or-Treat TriPeaks](https://halloween-tripeaks.crazy3d.org/) · [源码](https://github.com/AshinTop/halloween-tripeaks) — 高低相邻接龙与月亮桥.
+- [Pumpkin 2048](https://crazy3d.org/midnight-pumpkin-2048) · [源码](https://github.com/AshinTop/halloween-2048) — 经典合并与灯笼试炼.
+- [Ghost Lanterns 3D](https://crazy3d.org/halloween-3d) · [源码](https://github.com/AshinTop/halloween-3d) — 带灵魂联动的 3D 熄灯谜题.
+- [Haunted Hearts](https://crazy3d.org/halloween-love-game) · [源码](https://github.com/AshinTop/halloween-love-game) — 双幽灵、压力门与共享灯笼.
+- [Trick-or-Treat TriPeaks](https://crazy3d.org/halloween-tripeaks) · [源码](https://github.com/AshinTop/halloween-tripeaks) — 高低相邻接龙与月亮桥.
 
 ## 制作说明与支持
 
